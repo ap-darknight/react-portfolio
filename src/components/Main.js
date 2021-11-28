@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
@@ -129,8 +129,15 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const Main = () => {
 
     const [click, setClick] = useState(false);
-
+    const [looks, setLooks] = useState(false);
+    
     const handleClick = () => setClick(!click);
+    
+    useEffect(() => {
+        console.log("rendered");
+        if((window.screen.width>400) && window.screen.height) setLooks(true);
+        else setLooks(false);
+    }, [window.screen.width, window.screen.height])
 
     return (
         <MainContainer>
@@ -140,12 +147,14 @@ const Main = () => {
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
-            <Center click={click}>
+            {/* <p>Use the Desktop Please!!</p> */}
+            {(looks===false) && <p>Use the Desktop Please!!</p>}
+            {(looks===true) && <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
-            </Center>
+                <span>Punch Here</span>
+            </Center>}
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact target="_blank" to={{pathname:"mailto:pandeyashutosh150799@gmail.com"}}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -208,7 +217,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,7 +233,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 

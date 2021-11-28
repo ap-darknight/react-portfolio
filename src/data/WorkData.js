@@ -3,59 +3,59 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"ChatBrat 2.0",
+        description:"A chat App based on socket events, embedded emoji update system along with async rooms for chat!",
+        tags:["react","socket","node", "mern"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://vigorous-mccarthy-7cc7e9.netlify.app/",
+        github:"https://github.com/ap-darknight/chatbrat-2.0"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Dish Project",
+        description:"A calories calculation as well as monitoring app, monitors as well as provides ability to update data via admin portal!",
+        tags:["react","sass", "framer-motion"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        demo:"https://ap-darknight.github.io/dish-project/",
+        github:"https://github.com/ap-darknight/dish-project"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"Shortly - URL Shortener",
+        description:"A web app that shortens the link so that one can share it easily!",
+        tags:["react","api","styledComponents"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        demo:"https://shortly-ap-darknight.netlify.app/",
+        github:"https://github.com/ap-darknight/Shortly"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Compass Clock",
+        description:"A Clock that is inspired by the compass design and works in the compass way.",
+        tags:["react","bootStrap"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        demo:"https://ap-darknight.github.io/compass-clock/",
+        github:"https://github.com/ap-darknight/compass-clock"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+        name:"Hulu Clone",
+        description:"A ditto clone of Hulu Website as a project submitted for Hacktoberfest.",
+        tags:["html","css"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+        demo:"https://ap-darknight.github.io/hulu-clone/",
+        github:"https://github.com/ap-darknight/hulu-clone"
         
     },
     {
         id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
+        name:"Multiplier Game",
+        description:"A multiplier based game, play with maths. One of my beginner projects!",
+        tags:["basic","html","css", "javascript"],
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
+        demo:"https://ap-darknight.github.io/Multiplier_Game",
+        github:"https://github.com/ap-darknight/Multiplier_Game"
         
     },
     

@@ -80,18 +80,18 @@ const BlogPage = () => {
                 <PowerButton />
                 <SocialIcons />
                 <AnchorComponent number={numbers}/>
-<Center>
-<Grid>
+            <Center>
+                <Grid style={{minHeight: "100vh"}}>
+                    {/* <span>This is a work in ProGress...</span> */}
+                    {/* {
+                        Blogs.map(blog => {
+                            return <BlogComponent key={blog.id} blog={blog} />
+                        })
+                    } */}
+                </Grid>
 
-{
-    Blogs.map(blog => {
-        return <BlogComponent key={blog.id} blog={blog} />
-    })
-}
-</Grid>
-
-</Center>
-<BigTitle text="BLOG" top="5rem" left="5rem" />
+            </Center>
+            <BigTitle text="WORK IN PROGRESS..." top="5rem" left="5rem" />
             </Container>
         </MainContainer>
     )

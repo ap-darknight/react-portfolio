@@ -13,7 +13,7 @@ left: 50%;
 transform: translate(-50%, 0);
 
 background-color: #FCF6F4;
-padding: 0.3rem;
+padding: 1.15rem 1rem 1rem 1.1rem;
 border-radius: 50%;
 border: 1px solid #000;
 width: 2.5rem;
@@ -40,9 +40,9 @@ cursor: pointer;
 const PowerButton = () => {
     return (
         <Power>
-        <NavLink to="/">
-        <PowerBtn width={30} height={30} fill='currentColor' />
-        </NavLink>
+            <NavLink to="/">
+                <PowerBtn width={30} height={30} fill='currentColor' />
+            </NavLink>
         </Power>
     )
 }

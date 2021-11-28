@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
-
+import MainLogo from '../assets/Images/logo_work_1.png';
 
 
 
@@ -19,7 +19,7 @@ z-index:3;
 const LogoComponent = (props) => {
     return (
         <Logo color={props.theme}>
-          CB
+          <img style={{maxHeight: "70px"}} src={MainLogo} />
         </Logo>
     )
 }
