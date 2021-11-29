@@ -72,11 +72,18 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-            I'm a [full-stack developer]-slash-[Competitive Coder] located in India. I love to learn through challenges.
-            <br /> <br/>
-            I'm interested in the MERN stack Like trying new things and building great projects. I'm a undergrauate[Computer Science and Engineering(2018 - 2022)] at Madan Mohan Malaviya University of Technology and a wanna be blogger. I love to write codes and read books.
-            <br/> <br/>
-            I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+            <div>
+                <h3>About [Ashutosh], </h3>
+                <br/><br/>
+                I'm a <span style={{color: "green"}}>[full-stack developer]-slash-[Competitive Coder]</span> located in India. I love to learn through challenges.
+                <br /> <br/>
+                I'm an <span style={{color: "green"}}>undergrauate[Computer Science and Engineering(2018 - 2022)] at Madan Mohan Malaviya University of Technology</span> and a wanna be Blogger. 
+                I love to write codes and read books.
+                <br/> <br/>
+                I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+                <br/><hr></hr>
+                <span style={{color: "greenyellow"}}>I am available for interns, freelance and employment.</span>
+            </div>
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

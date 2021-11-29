@@ -20,10 +20,10 @@ function App() {
   const location = useLocation();
   const [looks,setLooks] = useState(false);
   useEffect(() => {
-    console.log("rendered");
+    console.log(window.screen.width);
     if((window.screen.width>400)) setLooks(true);
     else setLooks(false);
-  }, [window.screen.width, window.screen.height])
+  },[looks])
 
   
   return (<>
@@ -33,7 +33,6 @@ function App() {
 
     {looks && <SoundBar />}
 
-    {/* For framer-motion animation on page change! */}
     {(!looks) && <h1>Use PC/Laptop for full view!</h1>}
     {looks && <AnimatePresence exitBeforeEnter>
     <Switch  location={location} key={location.pathname}>

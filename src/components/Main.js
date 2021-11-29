@@ -129,16 +129,8 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const Main = () => {
 
     const [click, setClick] = useState(false);
-    const [looks, setLooks] = useState(false);
     
     const handleClick = () => setClick(!click);
-    
-    useEffect(() => {
-        console.log("rendered");
-        if((window.screen.width>400) && window.screen.height) setLooks(true);
-        else setLooks(false);
-    }, [window.screen.width, window.screen.height])
-
     return (
         <MainContainer>
          <DarkDiv   click={click}/>
@@ -147,12 +139,10 @@ const Main = () => {
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
-            {/* <p>Use the Desktop Please!!</p> */}
-            {(looks===false) && <p>Use the Desktop Please!!</p>}
-            {(looks===true) && <Center click={click}>
+            <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
                 <span>Punch Here</span>
-            </Center>}
+            </Center>
 
             <Contact target="_blank" to={{pathname:"mailto:pandeyashutosh150799@gmail.com"}}>
                 <motion.h2
