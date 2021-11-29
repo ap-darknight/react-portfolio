@@ -77,7 +77,7 @@ const AboutPage = () => {
                 <br/><br/>
                 I'm a <span style={{color: "green"}}>[full-stack developer]-slash-[Competitive Coder]</span> located in India. I love to learn through challenges.
                 <br /> <br/>
-                I'm an <span style={{color: "green"}}>undergrauate[Computer Science and Engineering(2018 - 2022)] at Madan Mohan Malaviya University of Technology</span> and a wanna be Blogger. 
+                I'm an <span style={{color: "green"}}>undergraduate[Computer Science and Engineering(2018 - 2022)] at Madan Mohan Malaviya University of Technology</span> and a wanna be Blogger. 
                 I love to write codes and read books.
                 <br/> <br/>
                 I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
